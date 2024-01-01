@@ -1,0 +1,11 @@
+.docs-sidebar.no-top{
+    top: 0;
+    height: 100%;
+}
+
+.button-action{
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    top: 10px;
+}

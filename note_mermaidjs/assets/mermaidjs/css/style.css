@@ -1,0 +1,31 @@
+.mermaid-container{
+    overflow: auto;
+    height: calc(100vh - 80px);
+    border: 1px solid #ced4da;
+    position: relative;
+}
+
+.mermaid-container .mermaid-section{
+    width: 100%;
+    height: 90%;
+    transform-origin: 0 0;
+}
+
+.mermaid-code textarea{
+    min-height: 400px;
+}
+
+.position-absolute.select-diagrams
+{
+    top: 5px;
+    left: 5px;
+    min-width: 100px;
+    z-index: 9999;
+}
+
+.position-absolute.toggle-description
+{
+    top: 5px;
+    right: 40px;
+    z-index: 9999;
+}

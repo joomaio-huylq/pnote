@@ -1,6 +1,6 @@
 <?php
-    $this->theme->add($this->url . 'assets/css/handsontable.full.min.css', '', 'handsontable-css');
-    $this->theme->add($this->url . 'assets/js/handsontable.full.min.js', '', 'bootstrap-handsontable');
+    $this->theme->add($this->url . 'assets/handsontable/css/handsontable.full.min.css', '', 'handsontable-css');
+    $this->theme->add($this->url . 'assets/handsontable/js/handsontable.full.min.js', '', 'bootstrap-handsontable');
     echo $this->renderWidget('core::notification'); ?>
 <style>
     .col-header-input:focus {

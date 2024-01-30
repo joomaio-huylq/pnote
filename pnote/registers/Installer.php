@@ -29,6 +29,11 @@ class Installer
         return '0.0.1';
     }
 
+    public static function createSuperUser()
+    {
+        return true;
+    }
+    
     public static function install( IApp $app)
     {
         // run sth to prepare the install

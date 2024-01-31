@@ -8,7 +8,10 @@ class Dispatcher
 {
     public static function dispatch(IApp $app)
     {
-        $app->plgLoad('permission', 'CheckSession');
+        if(!$app->get('restApi', ''))
+        {
+            $app->plgLoad('permission', 'CheckSession');
+        }
 
         $cName = $app->get('controller');
         $fName = $app->get('function');

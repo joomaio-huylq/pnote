@@ -29,9 +29,14 @@ class Installer
         return '0.0.1';
     }
 
-    public static function createSuperUser()
+    public static function createSuperUser($is_cli=false)
     {
-        return true;
+        if ($is_cli) {
+            $this->PNoteModel->createSuperUserCli();
+        }
+        return [
+            'widget' => 'pnote::createSuperUser'
+        ];
     }
     
     public static function install( IApp $app)
